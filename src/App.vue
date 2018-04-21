@@ -13,7 +13,7 @@
       <div class="row">
         <div class="col-md-4">
           <h2>What</h2>
-          <p>Voidder is SPA that helps you avoid conversations . </p>
+          <p>Defriend Me is SPA that helps you avoid conversations . </p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
@@ -53,7 +53,7 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Voidder'
+      msg: 'Defriend Me'
     }
   },
   components: {
