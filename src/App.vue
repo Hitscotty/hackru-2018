@@ -1,13 +1,26 @@
 <template>
-  <div id="app">
-  <Header></Header>
-  <Content></Content>
-  <Footer></Footer>
+  <div id="app" class="container">
+  <div class="row">
+  <div class="col">
+    <Header></Header>
+    </div>
+  </div>
+   <div class="row">
+   <div class="col">
+
+     <Content></Content>
+     </div>
+  </div>
+   <div class="row">
+      <div class="col">
+
+     <Footer></Footer>
+     </div>
+  </div>
   </div>
 </template>
 
 <script>
-import Header from "./sections/Header"
 import Content from "./sections/Content"
 import Footer from "./sections/Footer"
 
@@ -19,7 +32,8 @@ export default {
     }
   },
   components: {
-    Header
+    Content,
+    Footer
   }
 }
 </script>
