@@ -4,7 +4,7 @@
       <form class="ui form">
         <div class="field inline">
           <label> Phone #</label>
-          <input name="phone" />
+          <input name="phone" placeholder="(xxx) - xxx - xxxx" />
         </div>
         <div class="two fields inline">
           <label> Name </label>
