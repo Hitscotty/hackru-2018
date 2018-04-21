@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+  
+  <header></header>
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
@@ -20,12 +22,19 @@
 </template>
 
 <script>
+
+
+import Header from "./sections/Header";
+
 export default {
   name: 'app',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    Header
   }
 }
 </script>
