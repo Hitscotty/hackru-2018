@@ -29,12 +29,12 @@
 
 <script>
   export default {
-methods:{
-  phoneM(){
-    swal("Wait", "Why not just call them then?");
+    methods: {
+      phoneM() {
+        swal("Wait", "Why not just call them then?");
 
-  }
-}
+      }
+    }
   }
 
 </script>
