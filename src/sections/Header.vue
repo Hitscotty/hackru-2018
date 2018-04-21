@@ -1,19 +1,18 @@
 <template>
-  <div class="fixed">
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
+  <div>
+    <div class="navbar justify-content-center bg-dark">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Defriender</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 <script>
