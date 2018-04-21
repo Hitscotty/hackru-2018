@@ -1,18 +1,25 @@
 <template>
-  <div class="card px-4 py-3">
+  <div class="col-6 card px-4 py-3">
     <div class="card-body">
       <form class="ui form">
         <div class="field inline">
           <label> Phone #</label>
           <input name="phone" />
         </div>
+        <div class="two fields inline">
+          <label> Name </label>
+          <div class="field inline">
+            <input name="first" />
+          </div>
+          <div class="field inline">
+            <input name="last" />
+          </div>
+        </div>
         <div class="field inline">
-          <label>
-            <i class="material-icons">file_upload</i>
+          <label for="embedpollfileinput" class="ui huge green floated button">
+            <i class="ui upload icon"></i>
+            Upload Audio
           </label>
-          <input name="phone" />
-          <label> Russian </label>
-
         </div>
         <button class="ui green button"> send </button>
       </form>
@@ -26,3 +33,14 @@
   }
 
 </script>
+<style>
+  .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+</style>

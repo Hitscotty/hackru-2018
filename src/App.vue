@@ -5,11 +5,8 @@
     <Header></Header>
     </div>
   </div>
-   <div class="row">
-   <div class="col">
-
+   <div class="row justify-content-md-center">
      <Content></Content>
-     </div>
   </div>
    <div class="row">
       <div class="col">
