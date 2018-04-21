@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="field inline">
-          <label for="embedpollfileinput" class="ui huge green floated button">
+          <label for="embedpollfileinput" class="ui huge green floated button" @click="phoneM">
             <i class="ui upload icon"></i>
             Upload Audio
           </label>
@@ -29,7 +29,12 @@
 
 <script>
   export default {
+methods:{
+  phoneM(){
+    swal("Wait", "Why not just call them then?");
 
+  }
+}
   }
 
 </script>
