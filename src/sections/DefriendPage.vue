@@ -24,7 +24,7 @@
                     Upload Audio
                   </label>
                 </div>
-                <button class="ui green button"> send </button>
+                <button class="ui green button float-right"> send </button>
 
               </form>
             </div>
