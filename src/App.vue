@@ -31,7 +31,6 @@
     },
     methods: {
       toggle(page) {
-        console.log("toggling page")
         Object.keys(this.pages).forEach(key => {
           console.log(key);
           if (key === page) {
