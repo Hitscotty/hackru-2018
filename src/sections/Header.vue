@@ -1,15 +1,15 @@
 <template>
-  <div>
+  <div id="pager">
     <div class="navbar justify-content-center bg-dark">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link active" data-page="home" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Defriender</a>
+          <a class="nav-link" data-page="defriender" href="#">Defriender</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about">Contact</a>
+          <a class="nav-link" data-page="contact" href="#">Contact</a>
         </li>
       </ul>
     </div>

@@ -1,20 +1,59 @@
 <template>
   <div>
     <Header></Header>
-    <About-Section></About-Section>
+    <div id="render-body" ref="render-body">
+      <HomePage v-if="pages['home']"></HomePage>
+      <DefriendPage v-if="pages['defriender']"></DefriendPage>
+    </div>
   </div>
-
 </template>
 
 <script>
+  import App from "./App.vue";
+
   import Header from "./sections/Header"
-  import AboutSection from "./sections/AboutSection"
+  import HomePage from "./sections/HomePage"
+  import DefriendPage from "./sections/DefriendPage"
 
   export default {
-
+    data() {
+      return {
+        pages: {
+          home: false,
+          defriender: true
+        }
+      }
+    },
     components: {
       Header,
-      AboutSection
+      HomePage,
+      DefriendPage
+    },
+    methods: {
+      toggle(page) {
+        console.log("toggling page")
+        Object.keys(this.pages).forEach(key => {
+          console.log(key);
+          if (key === page) {
+            this.pages[key] = true;
+          } else {
+            this.pages[key] = false;
+          }
+        })
+
+      },
+      initRouter() {
+        const vm = this;
+        this.$nextTick(() => {
+          $("#pager").on("click", "a", function () {
+            const page = $(this).data("page")
+            vm.toggle(page);
+          });
+        })
+      }
+    },
+    mounted() {
+      this.initRouter();
     }
   }
 
